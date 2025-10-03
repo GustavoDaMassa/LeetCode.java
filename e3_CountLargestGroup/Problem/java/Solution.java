@@ -1,4 +1,4 @@
-package e3_CountLargestGroup.Problem;
+package e3_CountLargestGroup.Problem.java;
 
 import java.util.Collections;
 import java.util.HashMap;

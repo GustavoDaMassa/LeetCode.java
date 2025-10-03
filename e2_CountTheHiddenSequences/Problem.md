@@ -45,3 +45,53 @@ n == differences.length
 1 <= n <= 105
 -105 <= differences[i] <= 105
 -105 <= lower <= upper <= 105
+
+---
+
+# Contar as Sequências Ocultas
+
+Você recebe um array de `n` inteiros `differences` (baseado em 0), que descreve as diferenças entre cada par de inteiros consecutivos de uma sequência oculta de comprimento `(n + 1)`. Mais formalmente, chame a sequência oculta de `hidden`, então temos que `differences[i] = hidden[i + 1] - hidden[i]`.
+
+Você também recebe dois inteiros `lower` e `upper` que descrevem o intervalo inclusivo de valores `[lower, upper]` que a sequência oculta pode conter.
+
+Por exemplo, dadas `differences = [1, -3, 4]`, `lower = 1`, `upper = 6`, a sequência oculta é uma sequência de comprimento 4 cujos elementos estão entre 1 e 6 (inclusive).
+`[3, 4, 1, 5]` e `[4, 5, 2, 6]` são sequências ocultas possíveis.
+`[5, 6, 3, 7]` não é possível, pois contém um elemento maior que 6.
+`[1, 2, 3, 4]` não é possível, pois as diferenças não estão corretas.
+Retorne o número de sequências ocultas possíveis. Se não houver sequências possíveis, retorne 0.
+
+
+---
+
+Exemplo 1:
+
+Entrada: differences = [1,-3,4], lower = 1, upper = 6
+Saída: 2
+Explicação: As sequências ocultas possíveis são:
+- [3, 4, 1, 5]
+- [4, 5, 2, 6]
+  Assim, retornamos 2.
+  Exemplo 2:
+
+Entrada: differences = [3,-4,5,1,-2], lower = -4, upper = 5
+Saída: 4
+Explicação: As sequências ocultas possíveis são:
+- [-3, 0, -4, 1, 2, 0]
+- [-2, 1, -3, 2, 3, 1]
+- [-1, 2, -2, 3, 4, 2]
+- [0, 3, -1, 4, 5, 3]
+  Assim, retornamos 4.
+  Exemplo 3:
+
+Entrada: differences = [4,-7,2], lower = 3, upper = 6
+Saída: 0
+Explicação: Não há sequências ocultas possíveis. Assim, retornamos 0.
+
+---
+
+Restrições:
+
+n == differences.length
+1 <= n <= 105
+-105 <= differences[i] <= 105
+-105 <= lower <= upper <= 105

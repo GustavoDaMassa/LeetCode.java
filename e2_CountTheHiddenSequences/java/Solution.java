@@ -1,4 +1,4 @@
-package e2_CountTheHiddenSequences;
+package e2_CountTheHiddenSequences.java;
 
 class Solution {
     public int numberOfArrays(int[] differences, int lower, int upper) {

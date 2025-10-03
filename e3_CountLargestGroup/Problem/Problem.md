@@ -29,3 +29,37 @@ Explanation: There are 2 groups [1], [2] of size 1.
 Constraints:
 
 1 <= n <= 104
+
+---
+
+# Contar os Maiores Grupos
+
+Você recebe um inteiro n.
+
+Cada número de 1 a n é agrupado de acordo com a soma de seus dígitos.
+
+Retorne o número de grupos que possuem o maior tamanho.
+
+
+---
+
+Exemplo 1:
+
+Entrada: n = 13
+Saída: 4
+Explicação: Existem 9 grupos no total, eles são agrupados de acordo com a soma dos dígitos dos números de 1 a 13:
+[1,10], [2,11], [3,12], [4,13], [5], [6], [7], [8], [9].
+Existem 4 grupos com o maior tamanho.
+
+
+Exemplo 2:
+
+Entrada: n = 2
+Saída: 2
+Explicação: Existem 2 grupos [1], [2] de tamanho 1.
+
+---
+
+Restrições:
+
+1 <= n <= 104
